@@ -1,5 +1,5 @@
 /*
- * 19) Em uma empresa do governo, por sinal uma das mais organizadas, não se
+ * Em uma empresa do governo, por sinal uma das mais organizadas, não se
  * sabe quantos setores a compõe e nem quantos funcionários trabalham em cada
  * setor. O diretor, que poucos funcionários conhecem, resolveu fazer um
  * levantamento de funcionários e salários em cada setor, considerando-se que
@@ -7,7 +7,7 @@
  * obteve-se uma série de listas contendo, no topo de cada lista, o código do
  * setor e a seguir, o número de matrícula, o salário e o nome de cada
  * funcionário, referentes àquele setor. No final de cada lista o número de
- * matrícula do funcionário é Q. indicando que naquele setor não existem mais
+ * matrícula do funcionário é 0, indicando que naquele setor não existem mais
  * funcionários, e nas próximas listas ocorre o mesmo fato, exceto na última
  * lista que contém o número do setor igual a 0, indicando que não existem mais
  * setores na empresa.
