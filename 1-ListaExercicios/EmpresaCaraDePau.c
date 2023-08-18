@@ -2,8 +2,9 @@
  * A empresa Cara de Pau Ltda. resolveu fazer uma pesquisa de mercado,
  * abrangendo o maior número de pessoas possível, para saber se as pessoas
  * gostando ou não de um novo produto lançado no mercado, coletando o
- * sexo (M=masculino,F=femino), a idade e uma resposta (S=sim, N=não) de cada entrevistado.
- * 
+ * sexo (M=masculino,F=femino), a idade e uma resposta (S=sim, N=não) de cada
+ * entrevistado.
+ *
  * Faça um algoritmo que calcule:
  * a) quantas pessoas foram entrevistadas;
  * b) quantas pessoas disseram sim;
@@ -15,9 +16,10 @@
  * h) quantas mulheres até 23 anos disseram não;
  *
  * Adote flag adequado
- * 
- * AE(sexo, idade, resposta) 
- * AS(qtdeEnt, qtdeSim, qtdeNao, percSim, qtdeFSim, qtdeMNao, qtdeM23Sim, qtdeF23Nao)
+ *
+ * AE(sexo, idade, resposta)
+ * AS(qtdeEnt, qtdeSim, qtdeNao, percSim, qtdeFSim, qtdeMNao, qtdeM23Sim,
+ * qtdeF23Nao)
  */
 
 #include <stdio.h>
