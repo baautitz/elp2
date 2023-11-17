@@ -28,17 +28,17 @@ int estaCheia(Lista l) {
     return l.ultimo == MAX - 1;
 }
 
-void inserePos(Lista *l, Item i, Apontador a) {
+void inserePos(Lista *l, Item it, Apontador a) {
     for (int i = l->ultimo; i >= a; i--) {
         l->item[i] = l->item[i - 1];
     }
 
-    l->item[a] = i;
+    l->item[a] = it;
     l->ultimo++;
 }
 
-void insereUltimo(Lista *l, Item i) {
-    l->item[l->ultimo] = i;
+void insereUltimo(Lista *l, Item it) {
+    l->item[l->ultimo] = it;
     l->ultimo++;
 }
 
@@ -49,21 +49,40 @@ void removePos(Lista *l, Apontador a) {
     l->ultimo--;
 }
 
+void msg(char *msg) {
+    printf("%s\n", msg);
+}
+
+void exibe(Item it) {
+    printf("Chave: %s ", it.nome);
+    printf("Sexo: %c ", it.sexo);
+    printf("Idade: %d \n", it.idade);
+}
+
 void relatorio(Lista l) {
     if (estaVazia(l)) {
-        printf("Lista vazia.\n");
+        msg("Lista vazia.");
     } else {
-        printf("\n-----------------------------");
+        printf("\n-----------------------------\n");
         for (int i = l.primeiro; i < l.ultimo; i++) {
-            printf("\nChave: %s\n", l.item[i].nome);
-            printf("Sexo: %c\n", l.item[i].sexo);
-            printf("Idade: %d\n", l.item[i].idade);
+            exibe(l.item[i]);
         }
         printf("-----------------------------\n");
     }
 }
 
+char confirma() {
+    char resp;
+    do {
+        msg("Confirma? Digite S ou N");
+        scanf(" %c", &resp);
+    } while(resp != 'S' && resp != 'N');
+    
+    return resp;
+}
+
 void main() {
+    confirma();
     Item item1 = {"Vinicius", 'M', 19};
     Item item2 = {"Davi", 'M', 18};
     Item item3 = {"Bruna", 'F', 20};
